@@ -4,9 +4,7 @@
       <h2>Cafetería UAH</h2>
     </v-app-bar>
 
-    <v-content>
-      <HelloWorld />
-    </v-content>
+    <v-content> </v-content>
     <v-footer app
       ><span
         >Created with <v-icon color="red">mdi-heart</v-icon></span
@@ -16,14 +14,10 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
-
 export default {
   name: "App",
 
-  components: {
-    HelloWorld
-  },
+  components: {},
 
   data: () => ({
     //
