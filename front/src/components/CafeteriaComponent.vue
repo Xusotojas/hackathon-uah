@@ -1,7 +1,7 @@
-<template
-  ><v-container
+<template>
+  <!--Esto debería ser un v-for pasando un objeto de JS pero no nos da tiempo--><v-container
     ><v-row>
-      <v-card :loading="loading" class="mx-auto my-3" max-width="374">
+      <v-card class="mx-auto my-3" width="374">
         <v-img height="250" src="../../public/cafe.jpg"></v-img>
 
         <v-card-title>Café</v-card-title>
@@ -34,14 +34,14 @@
         <v-card-title>Café Expresso</v-card-title>
 
         <v-card-actions>
-          <v-btn color="deep-purple accent-4" text @click="blue">
+          <v-btn color="deep-purple accent-4" text @click="comprar('café')">
             Comprar
           </v-btn>
         </v-card-actions>
       </v-card>
 
-      <v-card :loading="loading" class="mx-auto my-3" max-width="374">
-        <v-img height="250" src="../../public/cafe.jpg"></v-img>
+      <v-card class="mx-auto my-3" width="374">
+        <v-img height="250" src="../../public/bocata.jpg"></v-img>
 
         <v-card-title>Bocata</v-card-title>
 
@@ -73,14 +73,14 @@
         <v-card-title>Bocata</v-card-title>
 
         <v-card-actions>
-          <v-btn color="deep-purple accent-4" text @click="blue">
+          <v-btn color="deep-purple accent-4" text @click="comprar('bocata')">
             Comprar
           </v-btn>
         </v-card-actions>
       </v-card>
 
-      <v-card :loading="loading" class="mx-auto my-3" max-width="374">
-        <v-img height="250" src="../../public/cafe.jpg"></v-img>
+      <v-card class="mx-auto my-3" width="374">
+        <v-img height="250" src="../../public/menu.jpg"></v-img>
 
         <v-card-title>Menú del día</v-card-title>
 
@@ -112,14 +112,14 @@
         <v-card-title>Menú del día</v-card-title>
 
         <v-card-actions>
-          <v-btn color="deep-purple accent-4" text @click="blue">
+          <v-btn color="deep-purple accent-4" text @click="comprar('menu')">
             Comprar
           </v-btn>
         </v-card-actions>
       </v-card>
 
-      <v-card :loading="loading" class="mx-auto my-3" max-width="374">
-        <v-img height="250" src="../../public/cafe.jpg"></v-img>
+      <v-card class="mx-auto my-3" width="374">
+        <v-img height="250" src="../../public/hamburguesa.jpg"></v-img>
 
         <v-card-title>Hamburguesa</v-card-title>
 
@@ -151,14 +151,18 @@
         <v-card-title>Hamburguesa</v-card-title>
 
         <v-card-actions>
-          <v-btn color="deep-purple accent-4" text @click="blue">
+          <v-btn
+            color="deep-purple accent-4"
+            text
+            @click="comprar('hamburguesa')"
+          >
             Comprar
           </v-btn>
         </v-card-actions>
       </v-card>
 
-      <v-card :loading="loading" class="mx-auto my-3" max-width="374">
-        <v-img height="250" src="../../public/cafe.jpg"></v-img>
+      <v-card class="mx-auto my-3" width="374">
+        <v-img height="250" src="../../public/refresco.jpg"></v-img>
 
         <v-card-title>Refresco</v-card-title>
 
@@ -190,14 +194,14 @@
         <v-card-title>Refresco</v-card-title>
 
         <v-card-actions>
-          <v-btn color="deep-purple accent-4" text @click="blue">
+          <v-btn color="deep-purple accent-4" text @click="comprar('refresco')">
             Comprar
           </v-btn>
         </v-card-actions>
       </v-card>
 
-      <v-card :loading="loading" class="mx-auto my-3" max-width="374">
-        <v-img height="250" src="../../public/cafe.jpg"></v-img>
+      <v-card class="mx-auto my-3" width="374">
+        <v-img height="250" src="../../public/postre.jpg"></v-img>
 
         <v-card-title>Postre</v-card-title>
 
@@ -229,18 +233,23 @@
         <v-card-title>Postre</v-card-title>
 
         <v-card-actions>
-          <v-btn color="deep-purple accent-4" text @click="blue">
+          <v-btn color="deep-purple accent-4" text @click="comprar('postre')">
             Comprar
           </v-btn>
         </v-card-actions>
       </v-card></v-row
     ></v-container
-  ></template
->
+  >
+</template>
 
 <script>
 export default {
-  name: "CafeteriaComponent"
+  name: "CafeteriaComponent",
+  methods: {
+    comprar(item) {
+      console.log(item);
+    }
+  }
 };
 </script>
 
