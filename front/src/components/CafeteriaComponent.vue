@@ -17,7 +17,7 @@
               size="14"
             ></v-rating>
 
-            <div class="grey--text ml-4">4.5 (413)</div>
+            <div class="grey--text ml-4">4.5 (113)</div>
           </v-row>
 
           <div class="my-4 subtitle-1 black--text">
@@ -25,7 +25,7 @@
           </div>
 
           <div>
-            Café expresso, sin azúcar, como lo tomaban los espartanos libres.
+            Café expresso.
           </div>
         </v-card-text>
 
@@ -43,12 +43,12 @@
       <v-card :loading="loading" class="mx-auto my-3" max-width="374">
         <v-img height="250" src="../../public/cafe.jpg"></v-img>
 
-        <v-card-title>Café</v-card-title>
+        <v-card-title>Bocata</v-card-title>
 
         <v-card-text>
           <v-row align="center" class="mx-0">
             <v-rating
-              :value="4.5"
+              :value="4.7"
               color="amber"
               dense
               half-increments
@@ -56,21 +56,21 @@
               size="14"
             ></v-rating>
 
-            <div class="grey--text ml-4">4.5 (413)</div>
+            <div class="grey--text ml-4">4.7 (133)</div>
           </v-row>
 
           <div class="my-4 subtitle-1 black--text">
-            $ • Italian, Cafe
+            3.5€
           </div>
 
           <div>
-            Café expresso, sin azúcar, como lo tomaban los espartanos libres.
+            Bocata de tortilla, lomo o bacon con queso.
           </div>
         </v-card-text>
 
         <v-divider class="mx-4"></v-divider>
 
-        <v-card-title>Café Expresso</v-card-title>
+        <v-card-title>Bocata</v-card-title>
 
         <v-card-actions>
           <v-btn color="deep-purple accent-4" text @click="blue">
@@ -82,12 +82,12 @@
       <v-card :loading="loading" class="mx-auto my-3" max-width="374">
         <v-img height="250" src="../../public/cafe.jpg"></v-img>
 
-        <v-card-title>Café</v-card-title>
+        <v-card-title>Menú del día</v-card-title>
 
         <v-card-text>
           <v-row align="center" class="mx-0">
             <v-rating
-              :value="4.5"
+              :value="4.1"
               color="amber"
               dense
               half-increments
@@ -95,21 +95,21 @@
               size="14"
             ></v-rating>
 
-            <div class="grey--text ml-4">4.5 (413)</div>
+            <div class="grey--text ml-4">4.1 (321)</div>
           </v-row>
 
           <div class="my-4 subtitle-1 black--text">
-            $ • Italian, Cafe
+            5.5€
           </div>
 
           <div>
-            Café expresso, sin azúcar, como lo tomaban los espartanos libres.
+            Menú del día
           </div>
         </v-card-text>
 
         <v-divider class="mx-4"></v-divider>
 
-        <v-card-title>Café Expresso</v-card-title>
+        <v-card-title>Menú del día</v-card-title>
 
         <v-card-actions>
           <v-btn color="deep-purple accent-4" text @click="blue">
@@ -117,15 +117,16 @@
           </v-btn>
         </v-card-actions>
       </v-card>
+
       <v-card :loading="loading" class="mx-auto my-3" max-width="374">
         <v-img height="250" src="../../public/cafe.jpg"></v-img>
 
-        <v-card-title>Café</v-card-title>
+        <v-card-title>Hamburguesa</v-card-title>
 
         <v-card-text>
           <v-row align="center" class="mx-0">
             <v-rating
-              :value="4.5"
+              :value="4.8"
               color="amber"
               dense
               half-increments
@@ -133,21 +134,21 @@
               size="14"
             ></v-rating>
 
-            <div class="grey--text ml-4">4.5 (413)</div>
+            <div class="grey--text ml-4">4.8 (254)</div>
           </v-row>
 
           <div class="my-4 subtitle-1 black--text">
-            $ • Italian, Cafe
+            4.0€
           </div>
 
           <div>
-            Café expresso, sin azúcar, como lo tomaban los espartanos libres.
+            Hamburguesa con carne de vacuno, lechuga y bacon.
           </div>
         </v-card-text>
 
         <v-divider class="mx-4"></v-divider>
 
-        <v-card-title>Café Expresso</v-card-title>
+        <v-card-title>Hamburguesa</v-card-title>
 
         <v-card-actions>
           <v-btn color="deep-purple accent-4" text @click="blue">
@@ -155,15 +156,16 @@
           </v-btn>
         </v-card-actions>
       </v-card>
+
       <v-card :loading="loading" class="mx-auto my-3" max-width="374">
         <v-img height="250" src="../../public/cafe.jpg"></v-img>
 
-        <v-card-title>Café</v-card-title>
+        <v-card-title>Refresco</v-card-title>
 
         <v-card-text>
           <v-row align="center" class="mx-0">
             <v-rating
-              :value="4.5"
+              :value="4.9"
               color="amber"
               dense
               half-increments
@@ -171,21 +173,21 @@
               size="14"
             ></v-rating>
 
-            <div class="grey--text ml-4">4.5 (413)</div>
+            <div class="grey--text ml-4">4.9 (44)</div>
           </v-row>
 
           <div class="my-4 subtitle-1 black--text">
-            $ • Italian, Cafe
+            0.75€
           </div>
 
           <div>
-            Café expresso, sin azúcar, como lo tomaban los espartanos libres.
+            Coca-cola, Fanta, Nestea o Sprite.
           </div>
         </v-card-text>
 
         <v-divider class="mx-4"></v-divider>
 
-        <v-card-title>Café Expresso</v-card-title>
+        <v-card-title>Refresco</v-card-title>
 
         <v-card-actions>
           <v-btn color="deep-purple accent-4" text @click="blue">
@@ -193,15 +195,16 @@
           </v-btn>
         </v-card-actions>
       </v-card>
+
       <v-card :loading="loading" class="mx-auto my-3" max-width="374">
         <v-img height="250" src="../../public/cafe.jpg"></v-img>
 
-        <v-card-title>Café</v-card-title>
+        <v-card-title>Postre</v-card-title>
 
         <v-card-text>
           <v-row align="center" class="mx-0">
             <v-rating
-              :value="4.5"
+              :value="3.5"
               color="amber"
               dense
               half-increments
@@ -209,21 +212,21 @@
               size="14"
             ></v-rating>
 
-            <div class="grey--text ml-4">4.5 (413)</div>
+            <div class="grey--text ml-4">3.5 (98)</div>
           </v-row>
 
           <div class="my-4 subtitle-1 black--text">
-            $ • Italian, Cafe
+            2.0€
           </div>
 
           <div>
-            Café expresso, sin azúcar, como lo tomaban los espartanos libres.
+            Fruta del día, postre de la casa o bollería
           </div>
         </v-card-text>
 
         <v-divider class="mx-4"></v-divider>
 
-        <v-card-title>Café Expresso</v-card-title>
+        <v-card-title>Postre</v-card-title>
 
         <v-card-actions>
           <v-btn color="deep-purple accent-4" text @click="blue">
