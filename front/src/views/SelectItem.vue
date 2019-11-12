@@ -1,25 +1,28 @@
 <template>
   <v-card>
-    <v-card-title class="justify-center">
-      Insert a valid NIF
-      </v-card-title>
-    <v-card-text class="justify-center">
-      <v-textarea v-model="message" placeholder="Add a NIF" name="textarea" rows="1" cols="1" class=" justify-center"></v-textarea>
-      <v-btn v-on:click="checkNif" class="justify-center">Log In</v-btn>
-    </v-card-text>
+    <Item />
   </v-card>
   
 
  </template>
 
 <script>
+import Item from "@/components/Item.vue";
+
 export default {
-  name: "Admin",
+  name: "SelectItem",
   methods:{
     checkNif: function(){
       console.log('Hello');
     }
-  }
+  }, components:{
+      Item
+  },
+  data: function () {
+    return {
+        items:[{}]
+    }
+  },
 };
 </script>
 
