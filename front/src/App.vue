@@ -1,11 +1,24 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-navigation-drawer app id="nav" clipped v-model="drawer">
+      <v-list nav>
+        <v-list-item-group v-model="listGroup" color="primary">
+          <v-list-item to="/">
+            <v-list-item-content>
+              <span>Main</span>
+            </v-list-item-content>
+          </v-list-item>
+          <v-list-item to="/admin">
+            <v-list-item-content>
+              <span>Admin</span>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+
+    <v-app-bar app color="primary" dark clipped-left>
       <h2>Cafetería UAH</h2>
-      <router-link to="/"><span class="white--text">Home</span></router-link>
-      <router-link to="/admin"
-        ><span class="white--text">Admin</span></router-link
-      >
     </v-app-bar>
 
     <v-content>
