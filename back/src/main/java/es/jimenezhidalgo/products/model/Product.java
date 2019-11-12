@@ -13,7 +13,6 @@ public class Product {
     private Timestamp date;
 
     public Product(
-            @J
             @JsonProperty("product") String product,
             @JsonProperty("price") String price,
             @JsonProperty("date") Timestamp date) {

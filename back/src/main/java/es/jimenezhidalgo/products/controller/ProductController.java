@@ -21,38 +21,6 @@ public class ProductController {
         mProductService = productService;
     }
 
-    /*@GetMapping
-    public List<LogbookEntry> getAllFlights(
-            @RequestParam(value = "limit", required=false) Optional<Integer> limit,
-            @RequestParam(value = "offset", required=false) Optional<Integer> offset) {
-        return mProductServicer.getAllFlights(limit, offset);
-    }
-
-    @GetMapping("flight/{id}")
-    public LogbookEntry getFlight(@PathVariable("id") int id) {
-        LogbookEntry logbookEntry = mProductServicer.getFlight(id).orElse(null);
-        return mProductServicer.getFlight(id).orElse(null);
-    }
-
-    @PostMapping
-    public void addFlight(@Valid @NonNull @RequestBody LogbookEntry logbookEntry) {
-        mProductServicer.addFlight(logbookEntry);
-    }
-
-    @DeleteMapping
-    public void removeFlight(@NonNull @RequestParam(value = "id") int id) {
-        if (mProductServicer.removeFlight(id) == 0) {
-            throw new IdNotFoundException();
-        }
-    }
-
-    @PutMapping("update")
-    public void updateFlight(@NonNull @RequestParam(value = "id") int id, @NonNull @RequestBody LogbookEntry entryToUpdate) {
-        if (mProductServicer.updateFlight(id, entryToUpdate) == 0) {
-            throw new IdNotFoundException();
-        }
-    }*/
-
     @GetMapping("getUserProducts")
     public List<Product> getUserProducts(@NonNull @RequestParam(value= "id") String dni) {
         System.out.printf(dni);
